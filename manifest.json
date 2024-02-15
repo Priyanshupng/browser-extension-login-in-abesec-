@@ -1,0 +1,23 @@
+{
+    "name": "abesec log in",
+    "version": "0.0.0.1",
+    "manifest_version": 2,
+    "description": "to log in abesec auto",
+    "permissions": ["tabs"],
+    "icons": {
+        "128": "icons/nasapod128x128.png"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+      },
+
+      "content_scripts": [
+        {
+          "matches": ["https://192.168.1.254:8090/"],
+          "js": ["content.js"]
+        }
+      ] 
+
+    
+}

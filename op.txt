@@ -1,0 +1,19 @@
+ "background": {
+        "scripts": ["background.js"]
+      },
+      "content_scripts": [
+        {
+          "matches": ["https://192.168.1.254:8090/"],
+          "js": ["content.js"]
+        }
+      ] 
+    
+
+
+
+    "content_scripts": [
+        {
+          "matches": ["https://192.168.1.254:8090/"],
+          "js": ["content.js"]
+        }
+      ] 
